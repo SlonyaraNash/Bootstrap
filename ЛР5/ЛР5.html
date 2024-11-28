@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>football</title>
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<script src="bootstrap.bundle.min.js"></script>
+		
+		<!-- MDBootstrap -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+		
+		<style>
+
+			#gallery img {
+				width: 450px; 
+				height: 450px;		
+			}
+			
+			#gallery2 img {
+				width: 270px; 
+				height: 270px;		
+			}
+			
+			.navbar-toggler {
+				background-color: #AAAAAA;
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+ 		<!-- Панель навигации -->
+		<nav class="navbar navbar-expand-md bg-light navbar-light">
+		
+			<!--Заголовок-->
+			<a class="navbar-brand" href="#">Футбол</a>
+			
+			<!--Кнопка для свернутого меню-->
+			<button
+
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#menu"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<!--меню-->
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Меню 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Меню 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Меню 3</a>
+					</li>
+				</ul>
+				
+				<!--форма для поиска-->
+				<form class="d-flex">
+					<input class="form-control" type="text" placeholder="Найти">
+					<button class="btn btn-outline-success" type="sumbit">Найти</button>
+				</form>
+				
+			</div>
+			
+		</nav>	
+		</header>
+		
+		<!-- Галерея -->
+		
+		<div class="container">
+			<h2 class="text-center mb-4">Популярные футбольные лиги</h2>
+			<div class="row" id="gallery">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img1.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img2.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img3.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img4.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img5.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="hover-zoom">
+						<img src="img6.jpg" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Основной контент -->
+		<div class="container">
+		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5" id="gallery2">
+			<div class="col">
+			  <div class="card h-100">
+				<div class="card-body">
+				  <div class="d-flex justify-content-center">
+				    <img src="img1.jpg" class="img-fluid">
+				  </div>
+				  <h5 class="card-title text-center">Национальные чемпионаты</h5>
+				  <p class="card-text">1. Европейские лиги: Английская Премьер-лига (Англия), Ла Лига (Испания), Бундеслига (Германия), 
+					Серия А (Италия), Лига 1 (Франция)<br>2. Другие лиги: MLS (Северная Америка), Brasileirão (Бразилия), Аргентинская 
+					Примера (Аргентина), J1 Лига (Япония).</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card h-100">
+				<div class="card-body">
+				  <div class="d-flex justify-content-center">
+				    <img src="img8.jpg" class="img-fluid">
+				  </div>
+				  <h5 class="card-title text-center">Клубные турниры</h5>
+				  <p class="card-text">1. Европейские турниры: Лига чемпионов УЕФА, Лига Европы УЕФА, Суперкубок УЕФА<br>2. Континентальные 
+				  турниры: Кубок Либертадорес (Южная Америка), Африканская Лига чемпионов.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card h-100">
+				<div class="card-body">
+				  <div class="d-flex justify-content-center">
+				    <img src="img9.jpg" class="img-fluid">
+				  </div>
+				  <h5 class="card-title text-center">Национальные сборные турниры</h5>
+				  <p class="card-text">1. Чемпионат мира (ФИФА)<br>2. Чемпионат Европы (УЕФА)<br>3. Кубок Америки (КОНМЕБОЛ)<br>4. Кубок 
+				  Африки (КАФ)<br>5. Кубок Азии (АФК).</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card h-100">
+				<div class="card-body">
+				  <div class="d-flex justify-content-center">
+				    <img src="img10.jpg" class="img-fluid">
+				  </div>
+				  <h5 class="card-title text-center">Известные футбольные награды</h5>
+				  <p class="card-text">1. Золотой мяч<br>2. Игрок года по версии ФИФА<br>3. Золотая бутса<br>4. Приз Яшина<br>5. Награда 
+				  Golden Boy.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+
+    <!-- Футер -->
+    <footer class="bg-light ">
+		<div class="row p-3">
+			<div class="col-12 col-md-9 row justify-content-start">
+            ©️ Щеглов Е.А., группа 1, 2024-2025
+			</div>
+			<div class="col-12 col-md-3 row justify-content-md-end justify-content-start">
+            ✉️ Контакты
+			</div>
+		</div>
+    </footer>
+</body>
+</html>
