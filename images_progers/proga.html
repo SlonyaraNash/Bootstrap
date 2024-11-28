@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Прогеры</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.bundle.min.js"></script>
+		
+		
+		<style>
+			#gallery img {
+				width: 35%; 
+				height: auto;
+				float: right;				
+			}
+			
+			@media (max-width: 765px) { 
+				#gallery img { 
+					width: 100%;     
+					float: none;     
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<!-- Основной контент -->
+		<div class="container">
+		  <div class="row">
+			<!-- Левая колонка -->
+			<div class="col-xl-4 d-flex order-xl-1 col-lg-6 order-lg-1 col-md-6 order-md-1">
+				<div class="card w-100 bg-light">
+					<img src="java.jpg" class="card-img-top img-fluid">
+					<div class="card-body align-items-center justify-content-center">
+						<h5 class="card-title text-center text-primary">Java</h5>
+						<p class="card-text">разработан в 1990–1996 годах канадским программистом  Джеймсом Гослингом.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Правая колонка -->
+			<div class="col-xl-3 d-flex order-xl-3 col-lg-6 order-lg-2 col-md-6 order-md-1">
+				<div class="card w-100 bg-light">
+					<img src="ruby.jpg" class="card-img-top img-fluid">
+					<div class="card-body align-items-center justify-content-center">
+						<h5 class="card-title text-center text-primary">Ruby</h5>
+						<p class="card-text">разработан в 1993-1995 годах, автор - японский программист Юкихиро Мацумото.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Центральные три колонки -->
+			<div class="col-xl-5 order-xl-2 col-lg-12 order-lg-3 col-md-12 order-md-3">
+			  <div class="row" id="gallery">
+				<div class="col-12 mb-3">
+				  <div class="card h-100 bg-light">		
+					<div class="card-body">
+						<img src="javascript.jpg" class="card-img-top img-fluid">
+						<h5 class="card-title text-primary">JavaScript</h5>
+						<p class="card-text">разработан в 1996 году, автор - американский программист Брендан Айк.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-12 mb-3">
+				  <div class="card h-100 bg-light">
+					<div class="card-body">
+						<img src="python.jpg" class="card-img-top img-fluid">
+					    <h5 class="card-title text-primary">Python</h5>
+					    <p class="card-text">создан в 1989–1991 годах голландским программистом Гвидо ван Россумом.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-12">
+				  <div class="card h-100 bg-light">
+					<div class="card-body">
+						<img src="c.jpg" class="card-img-top img-fluid">
+					    <h5 class="card-title text-primary">C</h5>
+					    <p class="card-text">разработан в 1969–1973 годах сотрудником Bell Labs Деннисом Ритчи.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			
+		</div>
+	</div>
+
+
+	</body>
+</html>
